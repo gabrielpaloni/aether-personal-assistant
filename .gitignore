@@ -17,6 +17,6 @@ error_log.txt
 __pycache__/
 *.pyc
 
-# Arquivos de ambiente virtual (se você usar)
+# Arquivos de ambiente virtual
 .env
 venv/
