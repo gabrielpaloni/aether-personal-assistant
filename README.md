@@ -1,4 +1,4 @@
-\# Aether - Assistente Pessoal de Linha de Comando
+# Aether - Assistente Pessoal de Linha de Comando
 
 
 
