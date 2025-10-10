@@ -6,7 +6,7 @@ Aether é um assistente pessoal customizável construído em Python com uma est�
 
 
 
-\## Funcionalidades
+## Funcionalidades
 
 \* \*\*Painel Unificado:\*\* Exibe um banner, uma frase aleatória e a lista de tarefas pendentes na tela principal.
 
