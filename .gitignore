@@ -1,0 +1,22 @@
+# Arquivos de configuração e credenciais
+config.json
+credentials.json
+token.json
+
+# Arquivos de chaves de API em texto
+gemini_api_key.txt
+picovoice_access_key.txt
+
+# Dados gerados pelo usuário e logs
+todolist.json
+sugestoes.txt
+error_log.txt
+*.sql
+
+# Arquivos temporários do Python
+__pycache__/
+*.pyc
+
+# Arquivos de ambiente virtual (se você usar)
+.env
+venv/

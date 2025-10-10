@@ -1,0 +1,15 @@
+# APIs do Google
+google-generativeai
+google-api-python-client
+google-auth-oauthlib
+google-auth-transport-requests
+
+# Reconhecimento e Síntese de Voz
+pyttsx3
+SpeechRecognition
+pyaudio
+pvporcupine
+
+# Interface e Utilidades
+rich
+keyboard

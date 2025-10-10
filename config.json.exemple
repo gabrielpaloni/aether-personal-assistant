@@ -1,0 +1,66 @@
+{
+  "agent_settings": {
+    "name": "Aether",
+    "prompt_prefix": "\n- [🎮 Flow's CyberUniverse 🎮] # ",
+    "wake_word": "jarvis"
+  },
+  "voice_settings": {
+    "speed_adjustment": 50,
+    "preferred_voice": "brazil"
+  },
+  "api_keys": {
+    "picovoice_access_key": "SUA_CHAVE_PICOVOICE",
+    "gemini_api_key": "SUA_CHAVE_GEMINI"
+  },
+  "file_paths": {
+    "todolist": "todolist.json",
+    "suggestions": "sugestoes.txt",
+    "phrases": "phrases.txt",
+    "farewells": "farewells.txt",
+    "error_log": "error_log.txt"
+  },
+  "app_shortcuts": {
+    "exemplo_site": "https://github.com",
+    "exemplo_programa": "C:\\Windows\\System32\\notepad.exe"
+  },
+  "mysql_settings": {
+    "default_user": "root",
+    "default_port": "3306",
+    "executable_path": "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin\\mysql.exe"
+  },
+  "google_drive_api": {
+    "folder_id": "ID_DA_SUA_PASTA_DO_DRIVE_AQUI",
+    "token_file": "token.json",
+    "credentials_file": "credentials.json",
+    "scopes": [
+      "https://www.googleapis.com/auth/drive.readonly"
+    ],
+    "file_type_menu": {
+      "1": ["PDFs", "application/pdf"],
+      "2": ["Documentos", "application/vnd.google-apps.document"],
+      "3": ["Planilhas", "application/vnd.google-apps.spreadsheet"],
+      "4": ["Apresentações", "application/vnd.google-apps.presentation"],
+      "5": ["Imagens", "image/"],
+      "6": ["Listar Tudo", "all"]
+    }
+  },
+  "chrome_settings": {
+    "executable_path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "profile_directory": "Default"
+  },
+"spreadsheet_manager": {
+    "folder_id": "ID_DA_SUA_PASTA_DE_PLANILHAS_AQUI",
+    "sheet_gids": {}
+    }
+  },
+  "localization": {
+    "month_map_pt": {
+      "jan": "jan", "feb": "fev", "mar": "mar", "apr": "abr",
+      "may": "mai", "jun": "jun", "jul": "jul", "aug": "ago",
+      "sep": "set", "oct": "out", "nov": "nov", "dec": "dec"
+    }
+  },
+  "gemini_settings": {
+    "model_name": "gemini-1.5-flash-latest"
+  }
+}
