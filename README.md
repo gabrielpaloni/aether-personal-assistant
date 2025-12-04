@@ -28,29 +28,29 @@ Aether é um assistente pessoal customizável construído em Python com uma est�
 
 1.  **Instale as dependências:**
 
-&nbsp;   ```
+   ```
 
-&nbsp;   pip install -r requirements.txt
+   pip install -r requirements.txt
 
-&nbsp;   ```
+  ```
 
 
 
 2.  **Crie os arquivos de chaves secretas** na pasta principal:
 
-&nbsp;   * `credentials.json`: Credencial da API do Google (siga o guia do Google Cloud).
+   * `credentials.json`: Credencial da API do Google (siga o guia do Google Cloud).
 
-&nbsp;   * `gemini\_api\_key.txt`: Sua chave de API do [Google AI Studio](https://aistudio.google.com/app/apikey).
+   * `gemini\_api\_key.txt`: Sua chave de API do [Google AI Studio](https://aistudio.google.com/app/apikey).
 
-&nbsp;   \* `picovoice\_access\_key.txt`: Sua chave de acesso do [PicoVoice Console](https://console.picovoice.ai/).
+   * `picovoice\_access\_key.txt`: Sua chave de acesso do [PicoVoice Console](https://console.picovoice.ai/).
 
 
 
 3.  **Configure os Scripts:**
 
-&nbsp;   * Em `run_drive_selector.py`, configure a `FOLDER_ID`.
+   * Em `run_drive_selector.py`, configure a `FOLDER_ID`.
 
-&nbsp;   * Em `spreadsheet_manager.py`, configure a `SPREADSHEET_FOLDER_ID`.
+   * Em `spreadsheet_manager.py`, configure a `SPREADSHEET_FOLDER_ID`.
 
-&nbsp;   * Em `launch_chrome.py`, configure `CHROME_EXE_PATH` e `PROFILE_DIR`.
+   * Em `launch_chrome.py`, configure `CHROME_EXE_PATH` e `PROFILE_DIR`.
 
