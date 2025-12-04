@@ -1,13 +1,26 @@
 import google.generativeai as genai
 import sys
 import json
+import datetime
 
 def get_ai_response(query, api_key, model_name):
     try:
         genai.configure(api_key=api_key)
 
+        agora = datetime.datetime.now()
+        data_formatada = agora.strftime("%d/%m/%Y")
+        hora_formatada = agora.strftime("%H:%M")   
+        dia_semana = agora.strftime("%A")
+        
+        prompt_completo = (
+            f"Contexto do Sistema: Hoje é {dia_semana}, dia {data_formatada}, às {hora_formatada}.\n"
+            f"Você é o assistente pessoal Aether.\n"
+            f"--------------------------------\n"
+            f"Usuário: {query}"
+        )
+
         model = genai.GenerativeModel(model_name=model_name)
-        response = model.generate_content(query)
+        response = model.generate_content(prompt_completo)
         
         print(response.text)
 
@@ -17,12 +30,12 @@ def get_ai_response(query, api_key, model_name):
 def main():
     try:
         with open('config.json', 'r', encoding='utf-8') as f:
-            config = json.load()
+            config = json.load(f)
         
         api_key = config['api_keys']['gemini_api_key']
         model_name = config['gemini_settings']['model_name']
 
-    except (FileNotFoundError, KeyError) as e:
+    except (FileNotFoundError, KeyError, json.JSONDecodeError) as e:
         print(f"ERRO_IA: Falha ao ler o 'config.json': {e}")
         sys.exit(1)
 
