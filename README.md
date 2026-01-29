@@ -1,56 +1,39 @@
-# Aether - Assistente Pessoal de Linha de Comando
+# Aether - Command Line Personal Assistant
 
+Aether is a customizable personal assistant built in Python with a cyberpunk aesthetic. It is designed to automate tasks, manage information, and integrate with modern APIs such as Google Drive and Google Gemini.
 
+## Features
 
-Aether é um assistente pessoal customizável construído em Python com uma estética cyberpunk. Ele é projetado para automatizar tarefas, gerenciar informações e se integrar com APIs modernas como Google Drive e Gemini.
+* **Unified Dashboard:** Displays a custom banner, a random quote, and your pending to-do list on the main screen.
+* **Task Manager:** Direct commands to add, remove, and mark tasks as completed (`todo add`, `todo done`, `todo list`).
+* **Google Drive Integration:** Interactive modules to list files in specific folders (`drive`, `spreadsheets`).
+* **AI Brain:** Any unrecognized command is automatically sent to Google's AI (Gemini) for a conversational response.
+* **Hybrid Voice Mode:** Primarily text-based, but includes a continuous listening mode via the `listen` command, activated by the keyword "Jarvis".
+* **Shortcuts:** Quick commands to launch applications and websites instantly.
 
+## Setup
 
-
-## Funcionalidades
-
-* **Painel Unificado:** Exibe um banner, uma frase aleatória e a lista de tarefas pendentes na tela principal.
-
-* **Gerenciador de Tarefas:** Comandos diretos para adicionar, remover e marcar tarefas como feitas (`todo add`, `todo done`, `todo list`).
-
-* **Integração com Google Drive:** Módulos interativos para listar arquivos em pastas específicas (`drive`, `planilhas`).
-
-* **Cérebro de IA:** Qualquer comando não reconhecido é enviado para a IA do Google (Gemini) para uma resposta conversacional.
-
-* **Modo de Voz Híbrido:** Funciona primariamente por texto, mas pode entrar em um modo de escuta contínua com o comando `escutar`, sendo ativado pela palavra-chave "jarvis".
-
-* **Atalhos:** Comandos para abrir rapidamente aplicativos e sites.
-
-
-
-## Configuração
-
-
-
-1.  **Instale as dependências:**
-
+1. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
    ```
 
-   pip install -r requirements.txt
-
-  ```
 
 
+2.  **Create secret key files in the root directory:
 
-2.  **Crie os arquivos de chaves secretas** na pasta principal:
+   * `credentials.json`: Google Cloud API credentials.
 
-   * `credentials.json`: Credencial da API do Google (siga o guia do Google Cloud).
+   * `gemini_api_key.txt`: Your API key [Google AI Studio](https://aistudio.google.com/app/apikey).
 
-   * `gemini\_api\_key.txt`: Sua chave de API do [Google AI Studio](https://aistudio.google.com/app/apikey).
-
-   * `picovoice\_access\_key.txt`: Sua chave de acesso do [PicoVoice Console](https://console.picovoice.ai/).
+   * `picovoice_access_key.txt`: Your access key [PicoVoice Console](https://console.picovoice.ai/).
 
 
 
-3.  **Configure os Scripts:**
+3.  **Configure Scripts:**
 
-   * Em `run_drive_selector.py`, configure a `FOLDER_ID`.
+   * In `run_drive_selector.py`, set your `FOLDER_ID`.
 
-   * Em `spreadsheet_manager.py`, configure a `SPREADSHEET_FOLDER_ID`.
+   * In `spreadsheet_manager.py`, set your `SPREADSHEET_FOLDER_ID`.
 
-   * Em `launch_chrome.py`, configure `CHROME_EXE_PATH` e `PROFILE_DIR`.
-
+   * In `launch_chrome.py`, configure your `CHROME_EXE_PATH` and `PROFILE_DIR`.
